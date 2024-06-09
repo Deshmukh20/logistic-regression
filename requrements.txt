@@ -1,0 +1,9 @@
+pandas
+SimpleImputer
+LogisticRegression
+accuracy_score
+precision_score
+recall_score
+confusion_matrix
+classification_report
+numpy
