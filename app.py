@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Define a function for prediction
 def predict_class(input_data):
