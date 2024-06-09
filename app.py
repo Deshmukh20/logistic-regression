@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from sklearn.impute import SimpleImputer
+from sklearn.linear_model import LogisticRegression
 
 # Define a function for prediction
 def predict_class(input_data):
