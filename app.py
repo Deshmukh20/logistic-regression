@@ -14,9 +14,10 @@ age = st.number_input('Age', min_value=0, max_value=100, value=25)
 sib_sp = st.number_input('SibSp', min_value=0, max_value=10, value=0)
 parch = st.number_input('Parch', min_value=0, max_value=10, value=0)
 fare = st.number_input('Fare', min_value=0.0, max_value=1000.0, value=30.0)
-sex_male = st.selectbox('Sex', ['male', 'female']) == 'male'
-embarked_Q = st.selectbox('Embarked', ['Q', 'S', 'C']) == 'Q'
-embarked_S = st.selectbox('Embarked', ['Q', 'S', 'C']) == 'S'
+sex_male = st.selectbox('Sex', ['male', 'female'], key='sex') == 'male'
+embarked = st.selectbox('Embarked', ['C', 'Q', 'S'], key='embarked')
+embarked_Q = embarked == 'Q'
+embarked_S = embarked == 'S'
 
 # Convert categorical inputs to numeric
 sex_male = 1 if sex_male else 0
